@@ -1,0 +1,24 @@
+.container {display: flex;align-items: center;justify-content: center;min-height: 100vh;background-color: #ededed;}
+svg:hover path {fill: black; transition: 1s ease;}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+svg:hover path {
+	animation: bounce 2s;
+}
+
